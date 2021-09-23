@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1826AD82-6090-4D7D-AA71-4F5D31171DCC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Festival</RootNamespace>
+    <AssemblyName>Festival</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="businessmanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="businessmanForm.Designer.cs">
+      <DependentUpon>businessmanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discountForm.Designer.cs">
+      <DependentUpon>discountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventForm.Designer.cs">
+      <DependentUpon>eventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedbackForm.Designer.cs">
+      <DependentUpon>feedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="offerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="offerForm.Designer.cs">
+      <DependentUpon>offerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regesterationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regesterationForm.Designer.cs">
+      <DependentUpon>regesterationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistorForm.Designer.cs">
+      <DependentUpon>vistorForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="businessmanForm.resx">
+      <DependentUpon>businessmanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discountForm.resx">
+      <DependentUpon>discountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventForm.resx">
+      <DependentUpon>eventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feedbackForm.resx">
+      <DependentUpon>feedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="offerForm.resx">
+      <DependentUpon>offerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="regesterationForm.resx">
+      <DependentUpon>regesterationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistorForm.resx">
+      <DependentUpon>vistorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_bakhtiarzein_fmt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amazon_feedback-800x534.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-smarter-goals.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\what-you-need-start-new-business.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_543802489-850x476.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offer_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82409-636282992381780999-16x9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
